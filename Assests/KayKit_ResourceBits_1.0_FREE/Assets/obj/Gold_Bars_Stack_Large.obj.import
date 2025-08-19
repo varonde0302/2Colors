@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b2f3jak86fmth"
+path="res://.godot/imported/Gold_Bars_Stack_Large.obj-697876a0bd81f863c5667e23a2c6fba9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Gold_Bars_Stack_Large.obj-697876a0bd81f863c5667e23a2c6fba9.mesh"]
+
+source_file="res://Assests/KayKit_ResourceBits_1.0_FREE/Assets/obj/Gold_Bars_Stack_Large.obj"
+dest_files=["res://.godot/imported/Gold_Bars_Stack_Large.obj-697876a0bd81f863c5667e23a2c6fba9.mesh", "res://.godot/imported/Gold_Bars_Stack_Large.obj-697876a0bd81f863c5667e23a2c6fba9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkff4x66h8lb5"]
+
+[ext_resource type="PackedScene" uid="uid://du4wmil2i38h0" path="res://Scenes/character.tscn" id="1_mxyy4"]
+[ext_resource type="PackedScene" uid="uid://b7dlm04gqb72h" path="res://Scenes/death_zone.tscn" id="3_aohg3"]
+[ext_resource type="PackedScene" uid="uid://dfyu6v52agucu" path="res://Scenes/playfield.tscn" id="6_qxhpv"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Character" parent="." instance=ExtResource("1_mxyy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+dash_speed = 40.0
+
+[node name="Camera3D" type="Camera3D" parent="Character"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.65931, 2.52554, 14.2852)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="playfield" parent="." node_paths=PackedStringArray("player") instance=ExtResource("6_qxhpv")]
+player = NodePath("../Character")
+
+[node name="Death zone" parent="." instance=ExtResource("3_aohg3")]
+transform = Transform3D(25, 0, 0, 0, 80, 0, 0, 0, 25, -39.1712, 0, 0)
+speed = 4.5

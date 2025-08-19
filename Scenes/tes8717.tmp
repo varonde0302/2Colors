@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://c47s4ay7k72nv"]
+
+[ext_resource type="PackedScene" uid="uid://dofcjawwqbo0w" path="res://Scenes/field/test.tscn" id="2_07hsb"]
+[ext_resource type="PackedScene" uid="uid://du4wmil2i38h0" path="res://Scenes/character.tscn" id="2_332fw"]
+[ext_resource type="PackedScene" uid="uid://qbsonbc4orp8" path="res://Scenes/UI/shop.tscn" id="2_rpoc3"]
+[ext_resource type="PackedScene" uid="uid://do3mcm1vmk1g1" path="res://Scenes/UI/score.tscn" id="3_pmi6h"]
+[ext_resource type="PackedScene" uid="uid://wjte3ykao5c2" path="res://Scenes/saller.tscn" id="4_do0ql"]
+[ext_resource type="PackedScene" uid="uid://b7dlm04gqb72h" path="res://Scenes/death_zone.tscn" id="5_wmseb"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Character" parent="." instance=ExtResource("2_332fw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -38.4081, 1.9825, 0.166427)
+
+[node name="Camera3D" type="Camera3D" parent="Character"]
+transform = Transform3D(1, 0, 0, 0, 0.917581, 0.397548, 0, -0.397548, 0.917581, -1.11499, 2.56296, 10.5194)
+
+[node name="Control" parent="Character/Camera3D" instance=ExtResource("2_rpoc3")]
+visible = false
+
+[node name="Control2" parent="Character/Camera3D" instance=ExtResource("3_pmi6h")]
+
+[node name="Node3D" parent="." instance=ExtResource("2_07hsb")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.690731, 0.723112, 0, -0.723112, 0.690731, -0.0659451, 7.04962, 6.43866)
+
+[node name="Saller" parent="." instance=ExtResource("4_do0ql")]
+
+[node name="Death zone" parent="." instance=ExtResource("5_wmseb")]
+transform = Transform3D(1, 0, 0, 0, 100, 0, 0, 0, 100, -64.3569, 0, 0)
+able = true
+
+[connection signal="open" from="Saller" to="Character/Camera3D/Control" method="_on_saller_open"]

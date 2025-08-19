@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwjq8alu3s4ky"
+path="res://.godot/imported/Fuel_A_Barrel_Dirty.obj-841777cafc3696ce480d09829e4f5b1f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Fuel_A_Barrel_Dirty.obj-841777cafc3696ce480d09829e4f5b1f.mesh"]
+
+source_file="res://Assests/KayKit_ResourceBits_1.0_FREE/Assets/obj/Fuel_A_Barrel_Dirty.obj"
+dest_files=["res://.godot/imported/Fuel_A_Barrel_Dirty.obj-841777cafc3696ce480d09829e4f5b1f.mesh", "res://.godot/imported/Fuel_A_Barrel_Dirty.obj-841777cafc3696ce480d09829e4f5b1f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

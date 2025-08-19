@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c3j2a7co313ls"
+path="res://.godot/imported/Iron_Nugget_Large.obj-65f4e68e5057e93c9e937103f726ebf1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Iron_Nugget_Large.obj-65f4e68e5057e93c9e937103f726ebf1.mesh"]
+
+source_file="res://Assests/KayKit_ResourceBits_1.0_FREE/Assets/obj/Iron_Nugget_Large.obj"
+dest_files=["res://.godot/imported/Iron_Nugget_Large.obj-65f4e68e5057e93c9e937103f726ebf1.mesh", "res://.godot/imported/Iron_Nugget_Large.obj-65f4e68e5057e93c9e937103f726ebf1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

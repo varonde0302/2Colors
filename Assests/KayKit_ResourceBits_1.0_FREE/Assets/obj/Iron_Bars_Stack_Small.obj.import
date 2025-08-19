@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bhmrhi8ga08ml"
+path="res://.godot/imported/Iron_Bars_Stack_Small.obj-ffb8a75a849e0e58148df4611fb39e26.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Iron_Bars_Stack_Small.obj-ffb8a75a849e0e58148df4611fb39e26.mesh"]
+
+source_file="res://Assests/KayKit_ResourceBits_1.0_FREE/Assets/obj/Iron_Bars_Stack_Small.obj"
+dest_files=["res://.godot/imported/Iron_Bars_Stack_Small.obj-ffb8a75a849e0e58148df4611fb39e26.mesh", "res://.godot/imported/Iron_Bars_Stack_Small.obj-ffb8a75a849e0e58148df4611fb39e26.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

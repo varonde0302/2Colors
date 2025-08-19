@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cud6dvc47kr50"
+path="res://.godot/imported/Gold_Nugget_Medium.obj-4f5ac3f427b4fb59ed9666ec43228733.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Gold_Nugget_Medium.obj-4f5ac3f427b4fb59ed9666ec43228733.mesh"]
+
+source_file="res://Assests/KayKit_ResourceBits_1.0_FREE/Assets/obj/Gold_Nugget_Medium.obj"
+dest_files=["res://.godot/imported/Gold_Nugget_Medium.obj-4f5ac3f427b4fb59ed9666ec43228733.mesh", "res://.godot/imported/Gold_Nugget_Medium.obj-4f5ac3f427b4fb59ed9666ec43228733.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

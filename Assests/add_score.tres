@@ -1,0 +1,12 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://cyuaxb5imfilo"]
+
+[ext_resource type="FontFile" uid="uid://dv5pxc2p02hvo" path="res://Assests/fonts/Anime Inept.otf" id="1_gns30"]
+
+[resource]
+font = ExtResource("1_gns30")
+font_size = 70
+font_color = Color(1, 0.772549, 0, 1)
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 19
+shadow_color = Color(0, 0, 0.298039, 1)

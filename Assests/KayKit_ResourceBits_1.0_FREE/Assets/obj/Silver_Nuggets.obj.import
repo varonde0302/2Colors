@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b8n8qbf8pxj6r"
+path="res://.godot/imported/Silver_Nuggets.obj-89d6aecce5f11b24356e57715596a7bb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Silver_Nuggets.obj-89d6aecce5f11b24356e57715596a7bb.mesh"]
+
+source_file="res://Assests/KayKit_ResourceBits_1.0_FREE/Assets/obj/Silver_Nuggets.obj"
+dest_files=["res://.godot/imported/Silver_Nuggets.obj-89d6aecce5f11b24356e57715596a7bb.mesh", "res://.godot/imported/Silver_Nuggets.obj-89d6aecce5f11b24356e57715596a7bb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

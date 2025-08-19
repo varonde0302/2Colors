@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://g5l6aom3jo1i"]
+
+[ext_resource type="Texture2D" uid="uid://cq4ed0klg1v46" path="res://icon.svg" id="1_mpnut"]
+[ext_resource type="Script" path="res://Scripts/canvas.gd" id="1_my613"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_whma1"]
+radius = 3.6759
+
+[node name="Canvas" type="Area3D"]
+script = ExtResource("1_my613")
+id = 1
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+modulate = Color(0.894717, 0.905988, 0, 1)
+texture = ExtResource("1_mpnut")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_whma1")
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]

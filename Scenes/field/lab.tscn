@@ -1,0 +1,97 @@
+[gd_scene load_steps=16 format=3 uid="uid://bldxbrkqhogud"]
+
+[ext_resource type="Texture2D" uid="uid://bedo3vwxr5gy6" path="res://Assests/sprits/Sprite-0001.png" id="1_2kvox"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_up5vs"]
+albedo_texture = ExtResource("1_2kvox")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q1fkk"]
+albedo_texture = ExtResource("1_2kvox")
+
+[sub_resource type="BoxMesh" id="BoxMesh_aas43"]
+material = SubResource("StandardMaterial3D_q1fkk")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rri5t"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b51bw"]
+albedo_texture = ExtResource("1_2kvox")
+
+[sub_resource type="PrismMesh" id="PrismMesh_gmakx"]
+material = SubResource("StandardMaterial3D_b51bw")
+left_to_right = 1.0
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_j4bdm"]
+data = PackedVector3Array(0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6s1r2"]
+albedo_texture = ExtResource("1_2kvox")
+
+[sub_resource type="PrismMesh" id="PrismMesh_flqye"]
+material = SubResource("StandardMaterial3D_6s1r2")
+left_to_right = 1.0
+subdivide_height = 8
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qujb5"]
+points = PackedVector3Array(0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hxs1b"]
+points = PackedVector3Array(0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bn561"]
+albedo_texture = ExtResource("1_2kvox")
+
+[sub_resource type="PrismMesh" id="PrismMesh_56hij"]
+material = SubResource("StandardMaterial3D_bn561")
+left_to_right = 0.0
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_etlpb"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="block" type="MeshInstance3D" parent="."]
+visible = false
+material_override = SubResource("StandardMaterial3D_up5vs")
+mesh = SubResource("BoxMesh_aas43")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="block"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="block/StaticBody3D"]
+shape = SubResource("BoxShape3D_rri5t")
+
+[node name="triangle left" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PrismMesh_gmakx")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="triangle left"]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="triangle left/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_j4bdm")
+
+[node name="triangle 2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+visible = false
+mesh = SubResource("PrismMesh_flqye")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="triangle 2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="triangle 2/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_qujb5")
+
+[node name="triangle 3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("PrismMesh_gmakx")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="triangle 3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="triangle 3/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_hxs1b")
+
+[node name="triangle right" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PrismMesh_56hij")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="triangle right"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="triangle right/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_etlpb")

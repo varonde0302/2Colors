@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bxc7yy7n5m570"
+path="res://.godot/imported/Textiles_Stack_Large_Colored.obj-4fc0c934240b78a014b53ab25d8ed4b4.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Textiles_Stack_Large_Colored.obj-4fc0c934240b78a014b53ab25d8ed4b4.mesh"]
+
+source_file="res://Assests/KayKit_ResourceBits_1.0_FREE/Assets/obj/Textiles_Stack_Large_Colored.obj"
+dest_files=["res://.godot/imported/Textiles_Stack_Large_Colored.obj-4fc0c934240b78a014b53ab25d8ed4b4.mesh", "res://.godot/imported/Textiles_Stack_Large_Colored.obj-4fc0c934240b78a014b53ab25d8ed4b4.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dvjfpu0r78nls"
+path="res://.godot/imported/Pallet_Wood_Covered_B.obj-e93ee1fe19a20710a1969fab0704ba2c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Pallet_Wood_Covered_B.obj-e93ee1fe19a20710a1969fab0704ba2c.mesh"]
+
+source_file="res://Assests/KayKit_ResourceBits_1.0_FREE/Assets/obj/Pallet_Wood_Covered_B.obj"
+dest_files=["res://.godot/imported/Pallet_Wood_Covered_B.obj-e93ee1fe19a20710a1969fab0704ba2c.mesh", "res://.godot/imported/Pallet_Wood_Covered_B.obj-e93ee1fe19a20710a1969fab0704ba2c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

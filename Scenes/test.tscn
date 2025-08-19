@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=3 uid="uid://c47s4ay7k72nv"]
+
+[ext_resource type="PackedScene" uid="uid://dofcjawwqbo0w" path="res://Scenes/field/test.tscn" id="2_07hsb"]
+[ext_resource type="PackedScene" uid="uid://du4wmil2i38h0" path="res://Scenes/character.tscn" id="2_332fw"]
+[ext_resource type="PackedScene" uid="uid://qbsonbc4orp8" path="res://Scenes/UI/shop.tscn" id="2_rpoc3"]
+[ext_resource type="PackedScene" uid="uid://do3mcm1vmk1g1" path="res://Scenes/UI/score.tscn" id="3_pmi6h"]
+[ext_resource type="PackedScene" uid="uid://c8xy5xg2x00lv" path="res://Scenes/UI/capa_UI.tscn" id="4_0vo1y"]
+[ext_resource type="PackedScene" uid="uid://wjte3ykao5c2" path="res://Scenes/saller.tscn" id="4_do0ql"]
+[ext_resource type="PackedScene" uid="uid://b7dlm04gqb72h" path="res://Scenes/death_zone.tscn" id="5_wmseb"]
+
+[sub_resource type="Environment" id="Environment_x5upj"]
+background_energy_multiplier = 4.27
+
+[node name="Main" type="Node3D"]
+
+[node name="Character" parent="." instance=ExtResource("2_332fw")]
+transform = Transform3D(0.8, 0, 0, 0, 0.799123, 0.0374481, 0, -0.0374481, 0.799123, -37.1324, 1.387, 3.256)
+
+[node name="Camera3D" type="Camera3D" parent="Character"]
+transform = Transform3D(1.25, 0, 0, 0, 1.25, -3.72529e-09, 0, 0, 1.25, 2.85639, 2.30455, 15.9145)
+environment = SubResource("Environment_x5upj")
+projection = 1
+size = 8.89941
+
+[node name="shop" parent="Character/Camera3D" instance=ExtResource("2_rpoc3")]
+visible = false
+
+[node name="score" parent="Character/Camera3D" instance=ExtResource("3_pmi6h")]
+
+[node name="UI" type="Control" parent="Character/Camera3D"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Capa" parent="Character/Camera3D" instance=ExtResource("4_0vo1y")]
+
+[node name="Node3D" parent="." instance=ExtResource("2_07hsb")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.690731, 0.723112, 0, -0.723112, 0.690731, -0.0659451, 7.04962, 6.43866)
+
+[node name="Saller" parent="." instance=ExtResource("4_do0ql")]
+
+[node name="Death zone" parent="." instance=ExtResource("5_wmseb")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 5, -101.384, 0, -0.246326)
+
+[connection signal="e_dash" from="Character" to="Character/Camera3D/score" method="_on_character_e_dash"]
+[connection signal="e_dash_cooldown" from="Character" to="Character/Camera3D/Capa" method="_on_character_e_dash_cooldown"]
+[connection signal="e_expl" from="Character" to="Character/Camera3D/score" method="_on_character_e_expl"]
+[connection signal="s_dash" from="Character" to="Character/Camera3D/score" method="_on_character_s_dash"]
+[connection signal="s_dash_cooldown" from="Character" to="Character/Camera3D/Capa" method="_on_character_s_dash_cooldown"]
+[connection signal="s_expl" from="Character" to="Character/Camera3D/score" method="_on_character_s_expl"]
+[connection signal="u_score" from="Character" to="Character/Camera3D/score" method="_on_character_u_score"]
+[connection signal="open" from="Saller" to="Character/Camera3D/shop" method="_on_saller_open"]

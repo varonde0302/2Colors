@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d3fwshoop1upv"
+path="res://.godot/imported/Copper_Nugget_Medium.obj-0e18a3c65cc7ce22421b69c6d0925cae.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Copper_Nugget_Medium.obj-0e18a3c65cc7ce22421b69c6d0925cae.mesh"]
+
+source_file="res://Assests/KayKit_ResourceBits_1.0_FREE/Assets/obj/Copper_Nugget_Medium.obj"
+dest_files=["res://.godot/imported/Copper_Nugget_Medium.obj-0e18a3c65cc7ce22421b69c6d0925cae.mesh", "res://.godot/imported/Copper_Nugget_Medium.obj-0e18a3c65cc7ce22421b69c6d0925cae.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

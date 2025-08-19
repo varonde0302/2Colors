@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://di168i2os45hu"
+path="res://.godot/imported/Stone_Brick.obj-a372fe5c07411eefc1ec7b85520204e9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Stone_Brick.obj-a372fe5c07411eefc1ec7b85520204e9.mesh"]
+
+source_file="res://Assests/KayKit_ResourceBits_1.0_FREE/Assets/obj/Stone_Brick.obj"
+dest_files=["res://.godot/imported/Stone_Brick.obj-a372fe5c07411eefc1ec7b85520204e9.mesh", "res://.godot/imported/Stone_Brick.obj-a372fe5c07411eefc1ec7b85520204e9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

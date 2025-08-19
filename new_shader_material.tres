@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://bmb4ch71iqv8y"]
+
+[ext_resource type="Shader" path="res://Shaders/cell.gdshader" id="1_1n0p6"]
+[ext_resource type="Shader" path="res://Shaders/general.gdshader" id="1_68vls"]
+[ext_resource type="Texture2D" uid="uid://b0rff1vxdm7bg" path="res://Assests/KayKit_Adventurers_1.0_FREE/Textures/mage_texture.png" id="2_43mgu"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1adfm"]
+render_priority = 1
+shader = ExtResource("1_1n0p6")
+shader_parameter/shadow_threshold = 0.0
+shader_parameter/specular_threshold = 1.0
+shader_parameter/specular_strenght = 0.0
+shader_parameter/highlight_threshold = 1.0
+shader_parameter/only_colored_specular = true
+shader_parameter/albedo_texture = ExtResource("2_43mgu")
+
+[resource]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_1adfm")
+shader = ExtResource("1_68vls")
+shader_parameter/color = Color(0, 0, 0, 1)
+shader_parameter/thickness = 0.04

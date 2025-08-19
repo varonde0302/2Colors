@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://l6jox051mol"
+path="res://.godot/imported/Wood_Log_B.obj-5201374abd2cfc9337046d290ed3c286.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Wood_Log_B.obj-5201374abd2cfc9337046d290ed3c286.mesh"]
+
+source_file="res://Assests/KayKit_ResourceBits_1.0_FREE/Assets/obj/Wood_Log_B.obj"
+dest_files=["res://.godot/imported/Wood_Log_B.obj-5201374abd2cfc9337046d290ed3c286.mesh", "res://.godot/imported/Wood_Log_B.obj-5201374abd2cfc9337046d290ed3c286.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

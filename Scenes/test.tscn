@@ -14,7 +14,8 @@ background_energy_multiplier = 4.27
 [node name="Main" type="Node3D"]
 
 [node name="Character" parent="." instance=ExtResource("2_332fw")]
-transform = Transform3D(0.8, 0, 0, 0, 0.799123, 0.0374481, 0, -0.0374481, 0.799123, -37.1324, 1.387, 3.256)
+transform = Transform3D(0.8, 0, 0, 0, 0.799123, 0.0374481, 0, -0.0374481, 0.799123, -37.3565, 5.32623, 1.01275)
+dash_speed = 2000.0
 
 [node name="Camera3D" type="Camera3D" parent="Character"]
 transform = Transform3D(1.25, 0, 0, 0, 1.25, -3.72529e-09, 0, 0, 1.25, 2.85639, 2.30455, 15.9145)

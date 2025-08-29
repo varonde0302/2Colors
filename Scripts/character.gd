@@ -86,7 +86,7 @@ func jump(delta):
 		velocity.y = JUMP_VELOCITY*delta
 
 func start_dash():
-	if Input.is_action_just_pressed("dash") and not explosion and not dash and $"Timers/Dash Cooldown".is_stopped() and not is_on_wall() and is_on_floor():
+	if Input.is_action_just_pressed("dash") and not explosion and not dash and $"Timers/Dash Cooldown".is_stopped() and not is_on_wall():
 		nb_dash_done += 1
 		if nb_dash_done == 2:
 			nb_dash_done = 0

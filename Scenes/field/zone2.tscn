@@ -14,6 +14,34 @@ physics_material = SubResource("PhysicsMaterial_0afvy")
 cell_size = Vector3(1.2, 1.2, 1)
 cell_center_z = false
 data = {
-"cells": PackedInt32Array(-6, 0, 1507337, -5, 0, 1507337, -4, 0, 1507337, -3, 0, 1507337, -2, 0, 1507337, -1, 0, 1507337, -65536, 0, 1507337, -65535, 0, 1507337, -65534, 0, 1507337, -65533, 0, 1507337, -65532, 0, 1507337, -65531, 0, 1507337)
+"cells": PackedInt32Array(-65531, 0, 1507337, -65532, 0, 1507337, -65533, 0, 1507337, -65534, 0, 1507337, -65535, 0, 1507337, -65536, 0, 1507337, -1, 0, 1507337, -2, 0, 1507337, -3, 0, 1507337, -4, 0, 1507337, -5, 0, 1507337, -6, 0, 1507337)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 1)
+
+[node name="obs floor" type="GridMap" parent="."]
+mesh_library = ExtResource("2_comy2")
+cell_size = Vector3(1.6, 0.4, 2)
+cell_center_z = false
+data = {
+"cells": PackedInt32Array(2, 0, 10, 65538, 0, 10, 131074, 0, 10, 1, 0, 10, 65537, 0, 10, 131073, 0, 10, 0, 0, 10, 65536, 0, 10, 131072, 0, 10, 65535, 0, 10, 196607, 0, 10, 131071, 0, 10, 65534, 0, 10, 131070, 0, 10, 196606, 0, 10)
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="obs floor2" type="GridMap" parent="."]
+mesh_library = ExtResource("2_comy2")
+cell_size = Vector3(1.6, 0.4, 2)
+cell_center_z = false
+data = {
+"cells": PackedInt32Array(65536, 0, 10, 65534, 0, 10, 655358, 0, 10, 655359, 0, 10, 589824, 0, 10, 655360, 0, 10, 655361, 0, 10, 655362, 0, 10, 589826, 0, 10, 589825, 0, 10, 720895, 0, 10, 720896, 0, 10, 720897, 0, 10, 720898, 0, 10)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="obs floor 1" type="GridMap" parent="."]
+mesh_library = ExtResource("2_comy2")
+physics_material = SubResource("PhysicsMaterial_0afvy")
+cell_size = Vector3(0.8, 0.31, 1)
+cell_center_z = false
+data = {
+"cells": PackedInt32Array(917501, 0, 11, 1048575, 0, 11, 1048581, 0, 11, 1048580, 0, 11, 1048579, 0, 11, 1048578, 0, 11, 1048577, 0, 14, 1048574, 0, 14, 983036, 0, 524302, 983037, 65535, 14)
+}
+metadata/_editor_floor_ = Vector3(0, 0, -1)
